@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deezer Music Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>Deezer Music Explorer</h1>
+        <p class="subtitle">Search songs, preview 30s clips, save favorites</p>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <input id="search" placeholder="Search artist, track or album..." />
+            <button id="btn-search">Search</button>
+            <select id="limit">
+                <option value="10">10 results</option>
+                <option value="20" selected>20 results</option>
+                <option value="30">30 results</option>
+            </select>
+        </section>
+
+        <section id="grid" class="grid"></section>
+
+        <section id="status" class="status"></section>
+    </main>
+
+    <footer class="footer">
+        Demo uses Deezer public API. If results fail due to CORS, see README for RapidAPI option.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
